@@ -1,126 +1,89 @@
-# 🧩 Autism Spectrum Disorder (ASD) — End-to-End ML Project
+# 🧩 Autism Spectrum Disorder (ASD) Dataset Overview
 
 ## 📌 Project Overview
-This project builds a complete end-to-end Machine Learning pipeline to predict whether an individual has Autism Spectrum Disorder (ASD) using screening data.
-
-The project covers:
-- Data loading
-- Exploratory Data Analysis (EDA)
-- Data preprocessing
-- Model building
-- Model evaluation
-- Feature importance analysis
+This project uses a screening dataset to analyze and predict Autism Spectrum Disorder (ASD) in individuals. The dataset contains behavioral, demographic, and screening test attributes that help in identifying ASD traits.
 
 ---
 
-## 📊 Dataset Information
-- Dataset: ASD Screening Adults Dataset  
-- Problem Type: Binary Classification (ASD: YES / NO)  
-- Total Records: 704  
-- Total Features: 21  
+## 📊 Dataset Summary
+
+- **Dataset Name:** ASD Screening Adults Dataset  
+- **Type:** Tabular Data  
+- **Task:** Binary Classification (ASD: YES / NO)  
+- **Total Records:** 704  
+- **Total Features:** 21  
+- **Target Variable:** Class/ASD (indicates whether a person has ASD or not)
 
 ---
 
-## 🛠️ Tech Stack
-- Python  
-- pandas  
-- numpy  
-- matplotlib  
-- seaborn  
-- scikit-learn  
-- xgboost  
-- imbalanced-learn  
+## 📁 Features Description
+
+### 🧠 Screening Test Features (AQ-10)
+These are the main behavioral screening questions:
+
+- A1_Score to A10_Score  
+- Binary values (0 or 1)  
+- Represent answers to autism-related questions  
 
 ---
 
-## 📂 Project Workflow
+### 👤 Demographic Features
 
-### 1. Data Loading
-- Loaded dataset using pandas
-- Checked basic structure and sample data
-
-### 2. Data Inspection
-- Checked missing values
-- Reviewed data types
-- Analyzed class imbalance
-
-### 3. Exploratory Data Analysis (EDA)
-- Distribution of ASD classes
-- Age distribution
-- Gender analysis
-- Jaundice and family history impact
-- AQ score analysis
-- Correlation heatmap
-
-### 4. Data Preprocessing
-- Converted categorical features into numeric
-- Handled missing values
-- Prepared dataset for modeling
-
-### 5. Model Building
-- Logistic Regression  
-- Random Forest  
-- XGBoost  
-
-### 6. Model Evaluation
-- Accuracy score  
-- Confusion matrix  
-- Precision, Recall, F1-score  
-- ROC-AUC score  
-
-### 7. Feature Importance
-- Identified key features influencing predictions
+- **age:** Age of the individual  
+- **gender:** Male / Female  
+- **ethnicity:** Ethnic background  
+- **jundice:** Whether the person had jaundice at birth (Yes/No)  
+- **austim:** Family history of autism (Yes/No)  
+- **country_of_res:** Country of residence  
+- **used_app_before:** Whether the person has used the screening app before  
+- **relation:** Who completed the test (self, parent, etc.)  
 
 ---
 
-## 📈 Key Insights
-- AQ screening scores are strong predictors  
-- Some demographic features show patterns  
-- Dataset has class imbalance  
-- Ensemble models like XGBoost perform better  
+### 📈 Additional Features
+
+- **result:** Final screening score  
+- **age_desc:** Age category description  
+- **Class/ASD:** Target variable (YES / NO)
 
 ---
 
-## 🚀 How to Run
+## ⚠️ Data Characteristics
 
-### 1. Clone Repository
-git clone https://github.com/nileshiq/asd-ml-project.git  
-cd asd-ml-project  
-
-### 2. Install Dependencies
-pip install -r requirements.txt  
-
-### 3. Run Notebook
-jupyter notebook ASD_End_to_End_Project.ipynb  
+- Contains both **categorical and numerical features**  
+- Includes **binary encoded screening answers**  
+- Some features may require **encoding (Label Encoding / One-Hot Encoding)**  
+- Dataset may have **class imbalance**  
+- Requires preprocessing before model training  
 
 ---
 
-## 📁 Project Structure
-ASD_End_to_End_Project.ipynb  
-Autism.csv  
-README.md  
-requirements.txt  
+## 📊 Potential Use Cases
+
+- ASD prediction using Machine Learning  
+- Behavioral pattern analysis  
+- Feature importance analysis  
+- Healthcare analytics projects  
+- Classification model practice  
 
 ---
 
-## 📌 Future Improvements
-- Deploy using Flask or FastAPI  
-- Build dashboard using Streamlit or Power BI  
-- Perform hyperparameter tuning  
-- Use more datasets for better generalization  
+## 🛠️ Data Preprocessing Requirements
+
+- Handle missing values (if any)  
+- Encode categorical variables  
+- Normalize or scale numerical features  
+- Handle class imbalance (if needed)  
 
 ---
 
-## 🤝 Contributing
-Contributions are welcome. Feel free to fork and submit a pull request.
+## 📈 Key Insights (General)
+
+- Screening scores (AQ-10) are highly important  
+- Family history and jaundice may influence prediction  
+- Demographic features provide additional context  
+- Combining behavioral and demographic data improves model performance  
 
 ---
 
-## 📬 Contact
-For any queries or suggestions, feel free to connect.
-
----
-
-## ⭐ Acknowledgements
-- Public ASD Screening Dataset  
-- Open-source libraries and community  
+## 📂 File Structure
