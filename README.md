@@ -43,6 +43,4 @@ To address this, this dataset has been developed to support time-efficient and a
 - Enable early and efficient ASD screening  
 - Reduce time and cost of diagnosis  
 - Improve classification using behavioral and personal data  
-- Identify key traits associated with ASD  
-
----
+- Identify key traits associated with ASD 
