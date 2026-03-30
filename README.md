@@ -84,7 +84,7 @@ The project covers:
 ## 🚀 How to Run
 
 ### 1. Clone Repository
-git clone https://github.com/your-username/asd-ml-project.git  
+git clone https://github.com/nileshiq/asd-ml-project.git  
 cd asd-ml-project  
 
 ### 2. Install Dependencies
